@@ -52,7 +52,7 @@ export default function Input() {
   const style = {
     fontSize: "1.5em",
     marginBottom: "0.3em",
-    color: inputValue.length > 10 ? "royalblue" : "" /* STEP 2 */,
+    color: inputValue.length > 10 ? "crimson" : "" /* STEP 2 */,
   };
 
   return (
@@ -60,7 +60,7 @@ export default function Input() {
       <h2>Input</h2>
       <div style={style}>{inputValue.toUpperCase()}</div> {/* STEP 3 */}
       <div>
-        <input type="text" onChange={changeInput} value={inputValue} />
+        <input type="text" onChange={changeInput} value = {inputValue} />
         <button onClick={reset}>Reset</button>
       </div>
     </div>
