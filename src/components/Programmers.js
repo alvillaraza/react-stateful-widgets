@@ -41,12 +41,13 @@ export default function Programmers() {
       } 
     })
     return name
+    // return people[activeId-1].people
   };
 
   const style = {
     fontSize: '1.5em',
     marginTop: '0.5em',
-    color:  id != null ? 'orange' : 'royalblue', // 🤔
+    color:  activeId === '' ? 'royalblue' : 'orange', // 🤔
   };
 
   return (
