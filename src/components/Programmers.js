@@ -46,7 +46,7 @@ export default function Programmers() {
   const style = {
     fontSize: '1.5em',
     marginTop: '0.5em',
-    color: 'royalblue', // 🤔
+    color:  id != null ? 'orange' : 'royalblue', // 🤔
   };
 
   return (
@@ -57,7 +57,7 @@ export default function Programmers() {
           /* Nasty bug! We should map over a slice of state, instead of 'listOfAwesome'.
           We might say: "it works, though!" But if the list of programmers is not state,
           we could never add or edit programmers in the future. The list would be a static thing. ;)" */
-          listOfAwesome.map(dev =>
+          people.map(dev =>
             <div key={dev.id}>
               {dev.name} <button onClick={() => { setActiveId(dev.id)/* set the featured id passing dev.id */ }}>Feature</button>
             </div>
