@@ -41,7 +41,7 @@ export default function Programmers() {
       } 
     })
     return name
-    // return people[activeId-1].people
+    // return people[activeId-1].name
   };
 
   const style = {
